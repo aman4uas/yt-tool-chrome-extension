@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>YT Tool</title>
+    <!-- npx tailwindcss -i ./styles.css -o ./output.css --watch -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="dark:text-white text-center m-0 p-0 flex flex-col justify-between overflow-x-hidden overflow-y-auto box-border h-[420px] w-[320px]">
+
+    <nav class="bg-black/20 dark:bg-black w-full flex flex-row justify-between items-center h-[42px] p-[2px]">
+        <div class="flex ml-1 flex-row items-center justify-center p-1">
+            <img class="h-[34px]" src="./images/logo-removebg.png" alt="logo-img">
+            <h1 class="text-black/70 dark:text-white font-extrabold text-[1.5rem] p-2">YT Tool</h1>
+        </div>
+        <div class="flex  mr-1 flex-row items-center justify-center p-1">
+            <img class="mode-btn dark:hidden h-[42px] hover:cursor-pointer" src="./images/light-mode-sun.png" alt="logo-img">
+            <img class="mode-btn hidden dark:block h-[38px] hover:cursor-pointer" src="./images/dark-mode-moon.png" alt="logo-img">
+        </div>
+    </nav>
+
+    <section id="loader" class="hidden bg-black/60 h-full justify-center items-center">
+        <img src="./images/loader-img.gif" alt="loading-img">
+    </section>
+
+    <section id="content" class="hidden dark:bg-black/60 content h-full flex-col items-center justify-evenly p-2">
+        <div>
+            <p class="m-2"><span class="text-base font-semibold text-gray-700 dark:text-[#EBEEED]">Number&nbsp;of&nbsp;Videos&nbsp;:&nbsp; </span><span id="count" class="text-[15px]">6</span></p>
+            <p class="m-2"><span class="text-base font-semibold text-gray-700 dark:text-[#EBEEED]">Average&nbsp;length&nbsp;of&nbsp;Videos&nbsp;:&nbsp; </span><br><span id="avgTime" class="text-[15px]"> 16 minutes, 29 seconds</span></p>
+            <p class="m-2"><span class="text-base font-semibold text-gray-700 dark:text-[#EBEEED]">Total&nbsp;Length&nbsp;of&nbsp;Playlist&nbsp;:&nbsp; </span><br><span id="t100x" class="text-[15px]"> 1 hrs, 38 minutes, 59 seconds</span></p>
+        </div>
+
+        <div>
+            <p class="text-xs p-0.5"><span class="font-semibold">At 1.25x : </span><span id="t125x">1 hrs, 19 minutes, 11 seconds</span></p>
+            <p class="text-xs p-0.5"><span class="font-semibold">At 1.25x : </span><span id="t150x">1 hrs, 19 minutes, 11 seconds</span></p>
+            <p class="text-xs p-0.5"><span class="font-semibold">At 1.25x : </span><span id="t175x">1 hrs, 19 minutes, 11 seconds</span></p>
+            <p class="text-xs p-0.5"><span class="font-semibold">At 1.25x : </span><span id="t200x">1 hrs, 19 minutes, 11 seconds</span></p>
+        </div>
+    </section>
+
+    <section id="error" class="hidden dark:bg-black/60 h-full flex-col items-center justify-evenly">
+        <div class="">
+            <img width="100px" src="./images/error-img.png" alt="error-img">
+        </div>
+        <p id="error_msg" class="font-bold text-lg">Not a YouTube page...!!</p>
+    </section>
+
+    <footer class="flex bg-black/20 dark:bg-black h-[34px] mb-0 flex-row justify-center items-center">
+            <a href="mailto:amanhacks4u@gmail.com"><img class="dark:hidden h-[28px] opacity-70 mr-3 ml-3 hover:cursor-pointer hover:opacity-100" src="./images/letter-light.png" alt="contact-img"></a>
+            <a href="mailto:amanhacks4u@gmail.com"><img class="hidden dark:block h-[28px] opacity-70 mr-3 ml-3 hover:cursor-pointer hover:opacity-100" src="./images/letter-dark.png" alt="contact-img"></a>
+            <a href="mailto:amanhacks4u@gmail.com"><img class="dark:hidden h-[26px] opacity-70 ml-3 hover:cursor-pointer hover:opacity-100" src="./images/bug-light.png" alt="bug-img"></a>
+            <a href="mailto:amanhacks4u@gmail.com"><img class="hidden dark:block h-[26px] opacity-70 mr-3 ml-3 hover:cursor-pointer hover:opacity-100" src="./images/bug-dark.png" alt="bug-img"></a>
+            <img class="reload dark:hidden h-[26px] opacity-70 mr-3 ml-3 hover:cursor-pointer hover:opacity-100" src="./images/reload-light.png" alt="reload-img">
+            <img class="reload hidden dark:block h-[26px] opacity-70 mr-3 ml-3 hover:cursor-pointer hover:opacity-100" src="./images/reload-dark.png" alt="reload-img">
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
