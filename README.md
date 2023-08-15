@@ -1,1 +1,1 @@
-# yt-tool-extension
+# yt-tool-chrome-extension
