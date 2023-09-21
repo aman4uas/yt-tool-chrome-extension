@@ -28,8 +28,6 @@ Helps user calculate the perfect playlist length with our YouTube playlist Lengt
 
 ➡ Uses cookies to set "Light" and "Dark" mode.
 
-➡ Uses [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) mechanism which ensures API key usage from authorised platform.
-
 
 
 ## Screenshots
